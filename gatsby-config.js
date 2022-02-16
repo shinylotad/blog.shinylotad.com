@@ -7,20 +7,20 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteTitle: `blog.shinylotad.com`,
+    siteTitleAlt: `SHINY BLOG`,
+    siteHeadline: `SHINY BLOG`,
+    siteUrl: `https://blog.shinylotad.com`,
+    siteDescription: `the mind of shiny lotad`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@pekingducky`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        mdx: true,
         navigation: [
           {
             title: `Blog`,
@@ -38,7 +38,7 @@ module.exports = {
           },
           {
             name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            url: `https://shinylotad.com`,
           },
         ],
       },
@@ -54,8 +54,8 @@ module.exports = {
         // See: https://github.com/LekoArts/gatsby-themes/tree/main/examples/minimal-blog#changing-your-fonts
         web: [
           {
-            name: `IBM Plex Sans`,
-            file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap`,
+            name: `Zen Maru Gothic`,
+            file: `https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap`,
           },
         ],
       },
@@ -64,30 +64,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `blog.shinylotad.com`,
+        short_name: `shinyblog`,
+        description: `the mind of shiny lotad`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
-      },
-    },
-    {
+                icons: [
+                  {
+                    src: `/android-chrome-192x192.png`,
+                    sizes: `192x192`,
+                    type: `image/png`,
+                  },
+                  {
+                    src: `/android-chrome-512x512.png`,
+                    sizes: `512x512`,
+                    type: `image/png`,
+                  },
+                ],
+              },
+            },
+      {      
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
